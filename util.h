@@ -1,0 +1,11 @@
+void errorFunction(char a[100]);
+int** alloc2DArray(size_t size_x, size_t size_y, size_t elemSize);
+int*** alloc3DArray(size_t sizeX, size_t sizeY, size_t sizeZ, size_t elemSize);
+void maxInt(int x, int y, int z, int *largest, int *secondLargest, int *smallest );
+int isLocal(int gx, int gy, int gz, int *ix, int *iy, int *iz);
+void makeSphere(int m, int center[2], int radius);
+int checkEdgeProcessor(int side);
+void splitProb(int nProc, int xDim, int yDim, int zDim, int finProc[3]);
+int factorize(int nProc, int factors[MAX_FACT]);
+void setNeighboursAndCommunicationConsts();
+void globalEquivalent(int ix, int iy, int iz, int *gx, int *gy, int *gz);
